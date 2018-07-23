@@ -4,6 +4,9 @@
 <head>
   <title>Entry 1: HTML과 나</title>
   <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
   /*---------------------------------
   Basic Style Sheet UNDER CONSTRUCTION
@@ -73,64 +76,69 @@
     padding-left: 20px;
   }
 
-    /*---------------------------------
-    Basic Style Sheet UNDER CONSTRUCTION
-    version: MOBILE 1.1
-    author: Doyeop Lee
-    email: dragontony1@gmail.com
-    website: dragontony1.github.io/main/
-    major updates:
-    -changes in overall grid structue, usage of template-areas, sidebar range
-    +minor changes in fonts and template areas
-    ---------------------------------*/
-    @media screen and (max-width: 800px) {
-      body {
-        margin: 0;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
-      }
-
-      .top-banner {
-        grid-area: top-banner;
-      }
-
-      /*  grid TITLE would not be applied in blog/main.html */
-      /*.title {
-        grid-area: title;
-      }*/
-
-      .header {
-        grid-area: header;
-        margin: 0;
-        text-align: center;
-        font-size: 1em;
-        font-family: "Avenir", sans-serif;
-      }
-
-      .sidebar {
-        grid-area: sidebar;
-        border: solid 3px black;
-        margin: 5px;
-        background-color: lightskyblue;
-        font-family: "Avenir", sans-serif;
-        text-align: center;
-      }
-
-      .content {
-        grid-area: content;
-        padding-left: 10px;
-      }
-
-      .footer {
-        grid-area: footer;
-        border-top: solid 3px black;
-        padding-top: 30px;
-        font-family: "Times New Roman", serif;
-      }
+  /*---------------------------------
+  Basic Style Sheet UNDER CONSTRUCTION
+  version: MOBILE 1.2
+  author: Doyeop Lee
+  email: dragontony1@gmail.com
+  website: dragontony1.github.io/main/
+  major updates:
+  -changes in overall grid structue, usage of template-areas, sidebar range
+  +minor changes in fonts and template areas
+  +error solved: added <meta viewport> tag
+  ---------------------------------*/
+  @media screen and (max-width: 800px) {
+    body {
+      margin: 0;
     }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in blog/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      margin: 0;
+      text-align: center;
+      font-size: 1em;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 4px black;
+      margin: 5px;
+      background-color: lightskyblue;
+      font-family: "Avenir", sans-serif;
+      text-align: center;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      padding-top: 30px;
+      font-family: "Times New Roman", serif;
+    }
+
+    ul {
+      padding-left: 12.3px;
+    }
+  }
   </style>
 </head>
 <body>

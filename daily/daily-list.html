@@ -70,14 +70,16 @@
 
     /*---------------------------------
     Basic Style Sheet UNDER CONSTRUCTION
-    version: MOBILE 1.1
+    version: MOBILE 1.2
     author: Doyeop Lee
     email: dragontony1@gmail.com
     website: dragontony1.github.io/main/
     major updates:
     -changes in overall grid structue, usage of template-areas, sidebar range
     +minor changes in fonts and template areas
+    +error solved: added <meta viewport> tag
     ---------------------------------*/
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @media screen and (max-width: 800px) {
       body {
         margin: 0;
@@ -107,7 +109,7 @@
 
       .sidebar {
         grid-area: sidebar;
-        border: solid 3px black;
+        border: solid 4px black;
         margin: 5px;
         background-color: lightskyblue;
         font-family: "Avenir", sans-serif;
@@ -124,6 +126,10 @@
         border-top: solid 3px black;
         padding-top: 30px;
         font-family: "Times New Roman", serif;
+      }
+
+      ul {
+        padding-left: 12.3px;
       }
     }
   </style>
