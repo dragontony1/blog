@@ -1,8 +1,7 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Entries of Daily Thoughts</title>
+  <title>Entry 6: "니가타를 새롭게!"</title>
   <meta charset="utf-8">
   <meta name="keywords" content="">
   <meta name="author" content="Doyeop Lee">
@@ -10,18 +9,25 @@
   <style>
     /*---------------------------------
     Basic Style Sheet UNDER CONSTRUCTION
-    version: 1.1
+    version: 1.2
     author: Doyeop Lee
     email: dragontony1@gmail.com
     website: dragontony1.github.io/main/
     major updates:
     -changes in overall grid structue, usage of template-areas, sidebar range
     +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
     ---------------------------------*/
     body {
       margin: 0;
       margin-right: 10px;
       font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
     .grid {
       display: grid;
@@ -73,14 +79,13 @@
 
     /*---------------------------------
     Basic Style Sheet UNDER CONSTRUCTION
-    version: MOBILE 1.2
+    version: MOBILE 1.1
     author: Doyeop Lee
     email: dragontony1@gmail.com
     website: dragontony1.github.io/main/
     major updates:
     -changes in overall grid structue, usage of template-areas, sidebar range
     +minor changes in fonts and template areas
-    +error solved: added <meta viewport> tag
     ---------------------------------*/
     @media screen and (max-width: 800px) {
       body {
@@ -111,7 +116,7 @@
 
       .sidebar {
         grid-area: sidebar;
-        border: solid 4px black;
+        border: solid 3px black;
         margin: 5px;
         background-color: lightskyblue;
         font-family: "Avenir", sans-serif;
@@ -129,10 +134,6 @@
         padding-top: 30px;
         font-family: "Times New Roman", serif;
       }
-
-      ul {
-        padding-left: 12.3px;
-      }
     }
   </style>
 </head>
@@ -146,35 +147,49 @@
       <h1>Welcome to dragontony1 HTML website!</h1>
     </div> -->
     <div class="header">
-      <h1>Entries for 'Daily Thoughts'</h1>
+      <h1>Entry 6: "니가타를 새롭게!"</h1>
     </div>
     <div class="sidebar">
       <ul id="sidebar-ul">
-        <li><a href="https://dragontony1.github.io/blog/main.html" title="Go to main page.">GO TO MAIN for Blog</a></li>
-        <li><a href="https://dragontony1.github.io/blog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li><a href="https://dragontony1.github.io/blog/daily/daily-list.html" title="Go to list.">Daily Thoughts</a></li>
+        <li>Travelog / Prague, Czech Republic (July 2018)</li>
         <li>Travelog / Tōhoku, Japan (2019)</li>
       </ul>
     </div>
     <div class="content">
-      <p><h3>List of Recent Entries</h3></p>
-      <p>
-        <ol>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-1.html">Gibberish_HTML과 나</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-2.html">지리이야기_도쿄 도시권(東京都市圏)</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-3.html">언어이야기_언어와 '감'</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-4.html">ㅁㅊ!_충칭(重庆)의 면적</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-5.html">ㅁㅊ!_사모아어와 일본어</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-6.html">ㅁㅊ!_"니가타를 새롭게!"</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-7.html">Gibberish_역대급 갑분싸</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-8.html">Gibberish_아이슬란드어와 핀란드어를 혼동하기 시작하다</a></li>
-          <li><a href="https://dragontony1.github.io/blog/daily/entry-9.html">Gibberish_하겐다즈와 움라우트</a></li>
-        </ol>
-      </p>
+      <h3>#ㅁㅊ! 3</h3>
+      <p>니가타역（新潟駅）이 올해 4월 재래선 고가화（在来線高架化） 1차 공사로 환골탈태하였다. 여느 주요 역이 그렇듯, 공사 전까지는 신칸센 타는 곳은 고가 위에 설치되어 있는 반면에 재래선 홈은 지상에 위치하고 있었다. 그런데, 이번 재래선 고가화 공사로 재래선 홈이 신칸센 홈 바로 옆에 신설되어 재래선 5번 홈(특급 전용 승강장)에서 죠에츠신칸센（上越新幹線）으로의 평면 환승이 가능하게 된 것이다. 그런데, 니가타역 공사와 관련된 영상을 보던 중 굉장한 것을 발견했다.
+      이번 니가타역 대대적 공사의 캐치프레이즈가 바로</p>
+      <img src="entry-6-photo-1.jpg" width="70%">
+      <h3>新潟を新型へ。</h3>
+      <p>한국어로 번역하면 "니가타를 신형으로!" "니가타를 새롭게!"즈음으로 번역할 수 있을 것 같다.</p>
+      <o>이 표어를 보고 순간 온 몸에 소름이 돋았다. 지금까지 봐온 캐치프레이즈 중 가장 잘 만든 것이라 생각한다. 너무나도 참신하고 효과적인 캐치프레이즈라 많은 사람들과 공유하고 싶어서 올려본다. <del>JR 동일본은 돈이 많아서 이런 것도 잘 하나보다.</del></p>
+      <p>그리고 필자는 개인적으로 니가타（新潟県新潟市）라는 도시에 깊은 애착을 가지고 있는데, 추후에 니가타에 대한 ‘지리이야기’도 올릴 예정이다! (사실 지리라고 하기보다는 거의 철도 이야기라, ‘지리이야기’ 코너를 ‘철도이야기’로 통폐합할까 고민 중이다.) 많은 기대 바란다.</p>
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <div class="footer">
       2018 dragontony1 HTML website.<br>
       dragontony1.github/blog<br>
-      <a href="https://dragontony1.github.io/blog/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.1</a><br>
+      <a href="https://dragontony1.github.io/blog/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
       Under construction.
     </div>
   </div>
