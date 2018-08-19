@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entry 17: 연플리 에이틴 그리고 현타</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.2
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+    ---------------------------------*/
+    body {
+      margin: 0;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in blog/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.1
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in blog/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 3px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in blog/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entry 17: 연플리 에이틴 그리고 현타</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/blog/daily/daily-list.html" title="Go to list.">Daily Thoughts</a></li>
+        <li><a href="https://dragontony1.github.io/blog/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>#Gibberish 8</h3>
+      <p>연플리 에이틴 여주인공(이름: 도하나)이 너무 좋아졌다. 가끔 심심할 때면 그 신인배우 분의 인스타에 접속해 넋을 놓고 서핑하기도 한다. ‘도하나’라는 그 가상의 캐릭터가 특히 정말 좋다. 나의 이상형에 정확히 맞는 사람은 거의 처음 본다.</p>
+      <img src="entry-17-photo-1.png" width="70%">
+      <p>https://www.instagram.com/shinyeyeye___/에서 퍼옴</p>
+      <br>
+      <p>하지만, 그와 별개로 스크린 속의 아름다운 세계와 현실과의 괴리가 나를 고통스럽게 한다.</p>
+      <p>스크린 속 그들이 정말 부럽다.</p>
+      <p>행복한 삶, 설레는 연애 경험들.</p>
+      <p>인생 동안 단 한 번도 경험해보지 못한 환상 속 이야기들.</p>
+      <p>연플리 에이틴 속 가상의 현실에 몰입하면서, 왜인지 모르겠지만 과거 몇 년 간의 내 모습이 정말 수치스럽고 한심하게 보이기 시작했다. 심지어 고등학교를 졸업하고 다시 새로운 이야기를 꿈꾸고 있을 내 미래의 모습을 상상하면 구역질이 나올 것만 같다.</p>
+      <p>아무런 속박과 헌신, 마음고생, 설렘, 부끄러움, 헛된 기대와 희망이 없는, 홀로만의 독립적인 미래를 살고 싶어졌다.</p>
+      <br>
+      <p>너무 힘들다.</p>
+      <p>수능에만 집중하고 싶은데, 뭐가 이것저것 많다.</p>
+      <p>사실 내가 집중해야 하는 것은 수능이 아니라 수시인데, 이 또 무슨 말 같지 않은 소리인가.</p>
+      <p>그냥 너무 힘들다는 생각밖에 들지 않는다.</p>
+</p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/blog/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>
