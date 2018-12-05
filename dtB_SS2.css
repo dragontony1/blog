@@ -20,16 +20,32 @@ main {
   width: 100%;
 }
 .head1 {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir", "Montserrat", sans-serif;
+}
+.head1:lang(ko) {
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .head2 {
-  font-family: "Times New Roman", serif;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+.head2:lang(ko) {
+  font-family: 'Nanum Myeongjo', serif;
 }
 .list {
   font-family: "Avenir", sans-serif;
 }
+.list:lang(ko) {
+  font-family: 'Nanum Myeongjo', serif;
+}
 .contents {
-  font-family: serif;
+  font-family: "Times New Roman", serif;
+}
+.contents:lang(ko) {
+  font-family: 'Nanum Myeongjo', serif;
+}
+.fb-like {
+  margin: 10px 0;
 }
 
 /*.top-navBar*/
@@ -71,6 +87,7 @@ main {
     left: 90px;
     top: 0;
     z-index: 100;
+    font-family: 'Avenir', 'Josefin Sans', sans-serif;
   }
   #top-nav div ul li {
     display: inline-block;
@@ -106,6 +123,7 @@ main {
   }
   #list-main-sect {
     display: block;
+    margin-top: 10px;
   }
   #list-main-sect ol {
     border-top: solid 3px #000;
@@ -153,6 +171,7 @@ main {
   }
   #post-main-sect {
     display: block;
+    font-size: 18px;
   }
   #post-main-sect .vtc_img {
     display: block;
@@ -185,13 +204,90 @@ main {
     color: #21439f;
   }
   #post-h1 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
   #post-h2 {
-    font-size: 2.3em;
+    font-size: 2em;
   }
   #post-h3 {
-    font-size: 4em;
+    font-size: 3.5em;
+  }
+
+  #index-main-sect {
+    display: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(/Users/doyeoplee/dragontony1.github/blog/index-bg-img.jpg);
+    background-size: 100% auto;
+    background-position: center;
+  }
+  #index-main-sect {
+    text-align: center;
+  }
+  #index-main-sect-1 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+  #index-main-sect-1 img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 30px auto 10px;
+  }
+  #index-h1 {
+    font-size: 4.5em;
+    margin: 0 auto;
+  }
+  #index-main-sect-2 {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+  }
+  #index-enter-btn {
+    display: inline-block;
+    width: 150px;
+    height: 43px;
+    border: solid 3px #000;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+  #index-enter-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  #index-enter-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+  }
+  #index-enter-btn:hover span {
+    padding-right: 25px;
+  }
+  #index-enter-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #index-enter-btn:hover {
+    background-color: #fff;
+    opacity: 0.8;
   }
 }
 
@@ -354,5 +450,82 @@ main {
   }
   #post-h3 {
     font-size: 2em;
+  }
+
+  #index-main-sect {
+    display: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(/Users/doyeoplee/dragontony1.github/blog/index-bg-img.jpg);
+    background-size: auto 100%;
+    background-position: center;
+  }
+  #index-main-sect {
+    text-align: center;
+  }
+  #index-main-sect-1 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+  #index-main-sect-1 img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 30px auto 10px;
+  }
+  #index-h1 {
+    font-size: 3.5em;
+    margin: 0 auto;
+  }
+  #index-main-sect-2 {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+  }
+  #index-enter-btn {
+    display: inline-block;
+    width: 150px;
+    height: 43px;
+    border: solid 3px #000;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+  #index-enter-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  #index-enter-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+  }
+  #index-enter-btn:hover span {
+    padding-right: 25px;
+  }
+  #index-enter-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #index-enter-btn:hover {
+    background-color: #fff;
+    opacity: 0.8;
   }
 }
